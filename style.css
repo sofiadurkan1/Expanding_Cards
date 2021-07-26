@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+}
+
+.container{
+    display: flex;
+    width:90vw;
+
+}
+
+.panel__1{
+    background:url(./images/image1.jpg);
+}
+.panel__2{
+    background: url(./images/image2.jpg);
+}
+
+.panel__3{
+    background: url(./images/image3.jpg);
+
+}
+.panel__4{
+    background: url(./images/image4.jpg);
+}
+.panel__5{
+    background: url(./images/image5.jpg)
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:90vh;
+    border-radius: 2rem;
+    color: #fff;
+    cursor:pointer;
+    flex: 0.5;
+    margin:0.65rem;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+}
+
+.panel.active{
+    flex:5;
+}
+.panel h3{
+    font-size: 1.5rem;
+    position:absolute;
+    bottom: 1.2rem;
+    left: 1.1rem;
+    margin:0;
+    opacity: 0;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition:opacity 0.3s ease-in 0.4s;
+
+
+}
+
+@media (max-width: 480){
+    .container{
+        width:100vw;
+    }
+    .panel__4,
+    .panel__5{
+        display:none;
+
+    }
+}
