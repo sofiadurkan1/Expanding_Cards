@@ -19,29 +19,30 @@ body{
 
 }
 
+
 .panel__1{
-    background:url(./images/image1.jpg);
+    background:url(./images/img1.jpg);
 }
 .panel__2{
-    background: url(./images/image2.jpg);
+    background: url(./images/img2.jpg);
 }
 
 .panel__3{
-    background: url(./images/image3.jpg);
+    background: url(./images/img3.jpg);
 
 }
 .panel__4{
-    background: url(./images/image4.jpg);
+    background: url(./images/img4.jpg);
 }
 .panel__5{
-    background: url(./images/image5.jpg)
+    background: url(./images/img5.jpg)
 }
 
 .panel{
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height:90vh;
+    height:80vh;
     border-radius: 2rem;
     color: #fff;
     cursor:pointer;
